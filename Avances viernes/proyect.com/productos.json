@@ -1,0 +1,33 @@
+[
+    {
+        "img": "1011B338_412_SR_RT_GLB.webp",
+        "nombre": "Adidas Grand Court",
+        "precio": "$249.900"
+    },
+    {
+        "img": "Bandit 2.jpg",
+        "nombre": "Bandit TR 2",
+        "precio": "$519.900"
+    },
+    {
+        "img":"duramo 10 2.webp",
+        "nombre": "Duramo 10",
+        "precio":"$349.900"
+    },
+    {
+        "img":"nike.jpeg",
+        "nombre":"Nike Sport",
+        "precio":"$349.900"
+    },
+    {
+        "img":"ktm.jpg",
+        "nombre":"KTM",
+        "precio":"$349.900"
+    },
+    {
+        "img":"skechers 2.jpg",
+        "nombre":"Skechers",
+        "precio":"$329.900"
+
+    }
+]
