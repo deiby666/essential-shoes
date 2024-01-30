@@ -1,5 +1,7 @@
 const btn_login = document.querySelector(".login")
 const btn_register = document.querySelector(".register")
+
+
 let usuarios = []
 
 
@@ -34,6 +36,8 @@ function guardarUsuario(e){
             title: "Te has registrado con exito",
             text: "Bienvenido a la familia essential shoes",
             imageUrl: "imagenes/458_icons-01.jpg",
+            width: 700,
+            height: 500,
             imageWidth: 200,
             imageHeight:200,
             backdrop: `
@@ -41,6 +45,7 @@ function guardarUsuario(e){
             no-repeat
           `,
           });
+    
           document.querySelector("#username").value = "";
           document.querySelector("#email").value = "";
           document.querySelector("#password").value = "";
