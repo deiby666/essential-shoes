@@ -10,3 +10,13 @@ stars.forEach(function(star, index) {
         }
     })
 })
+
+var swiper = new Swiper(".carouselContent ", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+ 
+  });
