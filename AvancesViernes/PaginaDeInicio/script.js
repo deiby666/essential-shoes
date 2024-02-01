@@ -1,3 +1,6 @@
+import {getData} from "./connection/api.js"
+const usuarios = await getData()
+
 const segundoBloque = document.querySelector('.containerAllSecondBlock')
 const containerAll = document.querySelector('.containerSlides')
 const buscar = document.querySelector('.buscar')
@@ -44,15 +47,15 @@ buscar.addEventListener("click", () =>{
     }
  })
 
-document.addEventListener("DOMContentLoaded", comprobarSesion)
 
 function comprobarSesion(){
     const options = document.querySelector(".options")
     const sesion = JSON.parse(localStorage.getItem("sesion")) || ""
-    const usuarios = JSON.parse(localStorage.getItem("registros")) || []
+    // const usuarios = JSON.parse(localStorage.getItem("registros")) || []
     
     const validacion = usuarios.some(usuario => usuario.email == sesion.usuario)
-
+    console.log(usuarios)
+    console.log(validacion);
     if(validacion == true){
         options.remove()
         const resultado = usuarios.filter(usuario => usuario.email == sesion.usuario)
@@ -79,3 +82,9 @@ function comprobarSesion(){
     }
 
 }
+
+// document.addEventListener("DOMContentLoaded", ()=>{
+//     comprobarSesion()
+// })
+
+comprobarSesion()

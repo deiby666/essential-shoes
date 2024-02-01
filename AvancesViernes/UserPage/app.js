@@ -1,4 +1,6 @@
+import { getData } from "../PaginaDeInicio/connection/api.js"
 
+const datos = await getData()
 
 const botonDatos = document.querySelector('.buttonDatos')
 const botonPedidos = document.querySelector('.buttonPedidos')
@@ -75,14 +77,13 @@ function validacion (contenedorson){
 
 }
 
-document.addEventListener('DOMContentLoaded', () =>{
-    validar()
-    comprobarSesion()
-})
+
+validar()
+comprobarSesion()
 
 function validar(){
     
-    const datos = JSON.parse(localStorage.getItem("registros")) || []
+    // const datos = JSON.parse(localStorage.getItem("registros")) || []
     const sesion = JSON.parse(localStorage.getItem("sesion")) || ""
 
     const filtrado = datos.filter(dato => dato.email == sesion.usuario)
@@ -114,13 +115,13 @@ function validar(){
 function comprobarSesion(){
     const options = document.querySelector(".options")
     const sesion = JSON.parse(localStorage.getItem("sesion")) || ""
-    const usuarios = JSON.parse(localStorage.getItem("registros")) || []
+    // const usuarios = JSON.parse(localStorage.getItem("registros")) || []
     
-    const validacion = usuarios.some(usuario => usuario.email == sesion.usuario)
+    const validacion = datos.some(usuario => usuario.email == sesion.usuario)
 
     if(validacion == true){
         options.remove()
-        const resultado = usuarios.filter(usuario => usuario.email == sesion.usuario)
+        const resultado = datos.filter(usuario => usuario.email == sesion.usuario)
         
         const options2 = document.createElement("div")
         options2.classList.add("options")
@@ -139,7 +140,7 @@ function comprobarSesion(){
 
         a2.addEventListener("click", ()=>{
             localStorage.removeItem("sesion")
-            window.location = "../Pagina de Inicio/index.html"
+            window.location = "../PaginaDeInicio/index.html"
         })
     }
 
