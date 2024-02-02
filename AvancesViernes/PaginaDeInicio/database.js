@@ -1,13 +1,10 @@
+import {getData,sendData} from "./connection/api.js"
+
 const btn_login = document.querySelector(".login")
 const btn_register = document.querySelector(".register")
 
+const usuariosAll = await getData()
 
-let usuarios = []
-
-
-document.addEventListener("DOMContentLoaded", () =>{
-    usuarios = JSON.parse(localStorage.getItem("registros")) || []
-})
 
 document.querySelector("#show1").addEventListener("click", mostrarPassword)
 document.querySelector("#show2").addEventListener("click", mostrarPassword)
@@ -30,8 +27,8 @@ function guardarUsuario(e){
             password
         }
     
-    
-        usuarios = [...usuarios, newUser]
+
+        
         Swal.fire({
             title: "Te has registrado con exito",
             text: "Bienvenido a la familia essential shoes",
@@ -45,13 +42,14 @@ function guardarUsuario(e){
             no-repeat
           `,
           });
+          
+          sendData(newUser)
     
           document.querySelector("#username").value = "";
           document.querySelector("#email").value = "";
           document.querySelector("#password").value = "";
           document.querySelector("#confirm").value = "";
     
-        localStorage.setItem("registros", JSON.stringify(usuarios))
     }else{
         Swal.fire({
             text: "Las contraseñas no coinciden",
@@ -68,7 +66,7 @@ function iniciarSesion(e){
     const password = document.querySelector("#password1").value
     let validate = false
 
-    usuarios.forEach(usuario =>{
+    usuariosAll.forEach(usuario =>{
         if(usuario.email == email && usuario.password == password){
             validate = true
             const sesion = {
