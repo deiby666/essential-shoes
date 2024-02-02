@@ -7,25 +7,21 @@
 }
 
 html {
-
     font-size: 62.5%;
 }
 
 body {
-
     font-size: 16px;
     width: 100%;
     font-family: 'Alata', sans-serif;
     font-family: 'Josefin Sans', sans-serif;
     font-family: 'Kanit', sans-serif;
-
 }
 
 .announcements {
-
     display: flex;
     justify-content: center;
-    background-color: rgb(255, 132, 0);
+    background-color: rgb(0, 183, 255);
     width: 100%;
     color: white;
     font-size: 1.5rem;
@@ -33,10 +29,10 @@ body {
 }
 
 .header {
-
     width: 100%;
 
 }
+
 .buscador{
     display: none;
 }
@@ -48,7 +44,6 @@ body {
 }
   
 .navBar ul li a::before {
-
     content: '';
     width: 0;
     height: 2px;
@@ -66,7 +61,6 @@ body {
 }
 
 .header .container {
-
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -75,18 +69,18 @@ body {
 .custom-select {
     position: relative;
     display: inline-block;
-  }
+}
 
-  .custom-select select {
+.custom-select select {
     display: none;
-  }
+}
 
-  .select-icon {
+.select-icon {
     cursor: pointer;
     color: #fff;
-  }
+}
 
-  .options {
+.options {
     position: absolute;
     top: 100%;
     left: 0;
@@ -96,14 +90,14 @@ body {
     display: none;
     border: 1px solid #ccc;
     background-color: #fff;
-  }
+}
 
-  .custom-select:hover .options {
+.custom-select:hover .options {
     display: block;
     flex-direction: column;
-  }
+}
 
-  .options a {
+.options a {
     display: block;
     padding: 10px;
     text-decoration: none;
@@ -111,11 +105,11 @@ body {
     width: 100%;
     margin: auto;
     text-align: center;
-  }
+}
 
-  .options a:hover {
+.options a:hover {
     background-color: #f2f2f2;
-  }
+}
 
 .header .container {
 
@@ -125,21 +119,17 @@ body {
 }
 
 .header .unorderList {
-
     display: flex;
     list-style: none;
     margin-left: 15rem;
 }
 
 .unorderList li {
-
     display: flex;
  
-
 }
 
 .unorderList a {
-
     text-decoration: none;
     color: black;
     font-size: 1.6rem;
@@ -148,15 +138,12 @@ body {
 }
 
 header .user {
-
     display: flex;
     gap: 4rem;
     margin-left: 6rem;
-
 }
 
 header .navToggle {
-
     font-size: 3rem;
     background: none;
     border: none;
@@ -166,61 +153,51 @@ header .navToggle {
 }
 
 .navLink:hover {
-
     color: rgb(255, 149, 0);
 }
 
 .header hr {
-
     opacity: 50%;
 }
 
 .containerSpace {
-
     width: 100%;
 }
 
 .containerAllPage {
-
     width: 80%;
     margin: auto;
     display: flex;
     flex-direction: column;
+
 }
 
 .containerSection {
-
     width: 100%;
     display: flex;
-
 }
 
 .containerImagen {
-
     width: 60%;
     margin: 6rem;
 }
 
 .containerImagen img {
-
     width: 100%;
     height: 70rem;
     object-fit: cover;
 }
 
 .infoAll {
-
     width: 40%;
 }
 
 .containerInfo {
-
     display: flex;
     flex-direction: column;
     gap: 3rem;
     width: 100%;
     margin: 6rem;
-
 }
 
 .containerInfo .tituloInfo {
@@ -233,21 +210,22 @@ header .navToggle {
 .tituloInfo h3 {
 
     font-size: 5rem;
+    margin: 0;
 }
 
 .tituloInfo p {
 
     font-size: 3rem;
+    font-size: 1.6rem;
+    margin: 0;
 }
 
 .colorContain {
-
     display: flex;
     flex-direction: column;
 }
 
 .colorContain .colores {
-
     display: flex;
     margin: 2rem 2rem 2rem 0;
     gap: 2rem;
@@ -255,7 +233,6 @@ header .navToggle {
 }
 
 .colores .color1 {
-
     width: 2rem;
     height: 2rem;
     border-radius: 50%;
@@ -263,7 +240,6 @@ header .navToggle {
 }
 
 .colores .color2 {
-
     width: 2rem;
     height: 2rem;
     border-radius: 50%;
@@ -271,7 +247,6 @@ header .navToggle {
 }
 
 .colores .color3 {
-
     width: 2rem;
     height: 2rem;
     border-radius: 50%;
@@ -279,7 +254,6 @@ header .navToggle {
 }
 
 .colores .color4 {
-
     width: 2rem;
     height: 2rem;
     border-radius: 50%;
@@ -287,23 +261,18 @@ header .navToggle {
 }
 
 .colores .color:hover {
-
     cursor: pointer;
-
 }
 
 .tallaContain {
-
     width: 35rem;
 }
 
 .titleTallas {
-
     width: 10rem;
 }
 
 .tallas {
-
     display: grid;
     gap: 0.4rem;
     grid-template-columns: 50% 50%;
@@ -312,61 +281,56 @@ header .navToggle {
 }
 
 .talla {
-
     display: flex;
     justify-content: center;
     font-weight: 600;
     border: 2px solid rgb(183, 183, 183);
     border-radius: 0.5rem;
-    padding: 1rem;
     cursor: pointer;
 }
 
 .talla:active {
-
     background-color: black;
     color: white;
 }
 
 .containerButtons {
-
     width: 100%;
     margin-top: 5rem;
 }
 
 .buttons {
-
     width: 100%;
     margin: auto;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-
 }
 
 .button {
-
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .button button {
-
     width: 100%;
     padding: 1.5rem 0;
     border-radius: 0.5rem;
 }
 
 .details button {
-
-    background: orange;
+    background: rgb(196, 196, 196);
     color: white;
     font-weight: 700;
+    border: none;
+}
+.details button:hover {
+
+    cursor: pointer;
 }
 
 .Cart {
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -374,40 +338,136 @@ header .navToggle {
 }
 
 .Cart button {
-
-    background: black;
+    background: rgb(43, 114, 255);
     color: white;
     font-weight: 700;
+    border: none;
+}
+
+.Cart button:hover {
+
+    cursor: pointer;
 }
 
 .Cart .envioGratis {
-
     color: black;
     margin: 1rem;
 }
 
 .containerDescription {
-
     width: 100%;
 }
 
 .containerDescription .description {
-
     width: 60%;
     
 }
 
 .description h3 {
-
     margin: 2rem 2rem 2rem 5rem;
     font-size: 5rem;
 }
 
 .description p {
-
     margin: 2rem 2rem 2rem 5rem;
     font-size: 2rem;
     text-align: justify;
+}
+
+.points {
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 4rem;
+}
+
+.point h2 {
+
+    font-size: 5rem;
+}
+
+.bi-star {
+
+    font-size: 3rem;
+    color: gold;
+}
+
+.sectionReviews {
+
+    position: relative;
+    width: 100%;
+}
+
+.reviewTest {
+
+    display: none;
+    position: fixed;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-height: 80vh;
+    background-color: #7595ff;
+    border-radius: 4rem;
+    padding: 4rem;
+    z-index: 100;
+
+}
+
+.reviewButtonContain {
+
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.reviewButton {
+
+    width: 14rem;
+    height: 4rem;
+    border-radius: 10px;
+    background-color: #7595ff;
+    color: white;
+    font-weight: 600;
+}
+
+.containerReview {
+
+    display: flex;
+    width: 100%;
+    margin: 5rem;
+    align-items: center;
+    position: relative;
+}
+
+.containerReviewsDone {
+
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.cardReview {
+
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    background-color: #7595ff;
+    color: white;
+}
+
+.cardReviewInfo {
+
+    margin: 1rem 4rem;
 }
 
 .containerResenas {
@@ -416,19 +476,30 @@ header .navToggle {
 }
 
 .resenas {
-
     width: 90%;
     margin: auto;
 }
 
 .stars {
-
     display: flex;
     align-items: center;
+    gap: 0.2rem;
+}
+
+.bi-star {
+
+    font-size: 3rem;
+}
+
+
+
+.point {
+
+    font-size: 5rem;
+    font-weight: 600;
 }
 
 .resenaCard {
-
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -436,16 +507,125 @@ header .navToggle {
 }
 
 .cardsResena {
-
     display: flex;
     flex-wrap: wrap;
 }
 
 .cardResena {
-
     display: flex;
     width: 50%;
     flex-direction: column;
+}
+
+.reviewTest .closeButton {
+
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.reviewTest #general {
+
+    width: 30%;
+}
+
+.reviewTest .expect {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.expect .inputExpect {
+
+    display: flex;
+    gap: 5rem;
+}
+
+.reviewTest .size {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.size .inputSize {
+
+    display: flex;
+    gap: 2rem;
+
+}
+
+.confort {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.confort #confort {
+
+    width: 50%;
+}
+
+.use {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.use .inputUse {
+
+    display: flex;
+    gap: 4rem;
+}
+
+.apodo {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.apodo p {
+
+    font-size: 1.2rem;
+    color: #a7a7a7;
+}
+
+.apodo input {
+
+    width: 100%;
+    padding: 0.2rem;
+    border-radius: 0.5rem;
+
+}
+
+#submitForm {
+
+    width: 16rem;
+    height: 3rem;
+    border-radius: 1rem;
+    background-color: #7595ff;
+    color: white;
+    font-weight: 600;
 }
 
 .resenaBar {
@@ -454,6 +634,7 @@ header .navToggle {
     height: 2rem;
     background-color: #ccc;
 }
+
 .resenaCard .star {
 
     font-size: 2.5rem;
@@ -462,33 +643,27 @@ header .navToggle {
     transition: color 0.3s;
     cursor: pointer;
 }
-
 .resenaCard .star:hover,
 .star.checked {
-
     color: gold;
 }
 
 .resenaCard h3 {
-
     font-size: 4rem;
     margin-right: 2rem;
 }
 
 .resenaUserContainer {
-
     width: 100%;
 }
 
 .resenaUserAll {
-
     width: 100%;
     display: flex;
     gap: 4rem;
 }
 
 .resenaUser {
-
     width: 30%;
     padding: 3rem;
     background-color: #ccc;
@@ -497,12 +672,10 @@ header .navToggle {
 }
 
 .resenaUser .star {
-
     color: #f2f2f2;
 }
 
 .footerResenas {
-
     width: 100%;
     display: flex;
     justify-content: center;
@@ -510,103 +683,183 @@ header .navToggle {
 }
 
 .footerResenas button{
-
     border: none;
     background: none;
     text-decoration: underline;
-    font-size: 2.0rem;
+    font-weight: 600;
+    font-size: 1.2rem;
 }
 
 .footerResenas button:hover {
-
     cursor: pointer;
 }
 
-.containerRecommendations {
-
+.carouselContainer {
     width: 100%;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    margin: 6rem auto auto auto;
+    margin-top: 10rem;
+    background-color: #fdfdfd;
+    position: relative;
 }
 
-.recommendedProduct {
-
-    display: flex;
-    width: 100%;
-    gap: 2rem;
+.carouselContent {
+    margin-bottom: 3rem;
 }
 
-.recommendedProduct .card {
-
-    width: 30%;
-    height: auto;
-    margin: 4rem;
+.cardCarousel {
+    width: 320px;
+    border: 2px solid rgb(200, 200, 200);
     border-radius: 2rem;
 }
 
-.recommendedProduct .card:hover {
+.cardImageCar {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 30rem;
+    width: 100%;
+}
 
+.cardCarousel button {
+    border: none;
+    padding: 14px 16px;
+    background-color: #7595ff;
+    border-radius: 10px;
+    color: white;
+    margin: 10px;
     cursor: pointer;
 }
 
-.detailCard {
-
-    color: rgb(167, 167, 167);
-}
-
-.card .infoCard {
+.cardContentImage, .cardContent {
     display: flex;
     flex-direction: column;
-    gap: 0.8rem;
 }
-.card img {
+
+.cardContent h2 {
+    margin: 0 2.5rem;
+}
+
+.cardContent h4 {
+    font-size: 1.2rem;
+    color: #ccc;
+    margin: 0 2.5rem;
+}
+
+.cardContent p {
+    font-size: 1.3rem;
+    margin-left: 2.5rem;
+}
+
+.cardImageCar .cardImg {
+    height: 100%;
+    width: 90%;
+    object-fit: cover;
+}
+
+.cardContent .buttonsCard {
+
+    width: 90%;
+}
+
+.cardContent .button {
 
     width: 100%;
+}
+
+.cardContent .button2 {
+
+    width: 100%;
+    background-color: #a7a7a7;
 }
 
 .footer {
 
     display: flex;
-    padding: 2rem 0;
     justify-content: space-around;
-    margin-top: 10rem;
-    background-color: rgb(255, 115, 0);
+    align-items: center;
+    width: 60%;
+    margin: 5rem auto auto auto;
+}
 
+.footerSections {
+
+    display: flex;
+    align-items: center;
+    gap: 10rem;
+    width: 100%;
+}
+
+.sectionFooter a {
+    font-size: 1.2rem;
 }
 
 .footer li {
-
     display: flex;
     flex-direction: column;
-    color: black;
-    margin: 1rem;
-
+    margin: 0.5rem;
 }
 
 .footerLink:hover {
-
     color: orange;
 }
 
 .footer img {
-
     margin: 1rem;
 }
 
 .footer a {
-
     text-decoration: none;
-    color: white;
+    color: black;
     
 }
 
-.copyright{
-
-   text-align: end;
-   background-color:  rgb(255, 115, 0);
-   padding: 1rem 2rem;
+.footerDown {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6rem;
 }
 
+.footerDown h3 {
+    font-size: 1.2rem;
+}
 
+.footerDown .terms {
+    width: auto;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footerDown .terms a {
+    text-decoration: none;
+    color: black;
+}
+
+.copyrightDiv {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.copyright{
+   width: auto;
+   margin: 2rem;
+   font-size: 1rem;
+}
+
+.mostrar {
+
+    display: block;
+}
+
+.cerrar {
+
+    display: none;
+}
+
+body.overflow-hidden {
+
+    overflow: hidden;
+}

@@ -18,7 +18,6 @@ const contain = document.querySelectorAll('.div1')
 const datosData = document.querySelector('.datosData')
 const botonPuntos = document.querySelector('.points')
 
-
 let tipo;
 
 validacion(containerData)
@@ -66,17 +65,14 @@ function validacion (contenedorson){
     contain.forEach((container) => {
 
         if (container == contenedorson){ 
-
             container.style.display = 'block'
         }
         else {
-
             container.style.display = 'none'
         }
     })
 
 }
-
 
 validar()
 comprobarSesion()
@@ -145,4 +141,3 @@ function comprobarSesion(){
     }
 
 }
-

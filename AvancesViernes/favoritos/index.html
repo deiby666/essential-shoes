@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Store</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <a href="index.html" class="logo"
+        ><img
+          src="458_icons-01.jpg"
+          class="logoHeader"
+          alt="Imagen del logo"
+          width="70px"
+      /></a>
+
+      <div class="menu-header">
+        <button id="button-header-favorite">
+          <i class="fa-solid fa-heart"></i>
+          <span class="counter-favorite">0</span>
+        </button>
+        <button>
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="counter-cart">0</span>
+        </button>
+      </div>
+
+      <div class="container-list-favorites">
+        <div class="header-favorite">
+          <h3>Mis Favoritos</h3>
+          <i class="fa-solid fa-xmark" id="btn-close"></i>
+        </div>
+        <hr />
+        <div class="list-favorites">
+          <div class="card-favorite">
+            <p class="title"></p>
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+
+      <div class="ordenarContain">
+        <div class="ordenar">
+          <span>Ordenar por:</span>
+          <select name="" id="desplegar">
+            <option value="">Relevancia</option>
+            <option value="">Mayor precio</option>
+            <option value="">Menor precio</option>
+          </select>
+        </div>
+      </div>
+
+      <section id="container">
+        <section class="category">
+          <div class="categoryFilter">
+            <h3 class="titleCategory">Categoria</h3>
+            <hr />
+            <div>
+              <input
+                type="checkbox"
+                name="checkbox"
+                id="checkbox"
+                class="checkboxAll"
+              />
+              <label for="checkbox">Trail</label>
+            </div>
+
+            <div>
+              <input
+                type="checkbox"
+                name="checkbox2"
+                id="checkbox2"
+                class="checkboxAll"
+              />
+              <label for="checkbox2">Running</label>
+            </div>
+
+            <div>
+              <input
+                type="checkbox"
+                name="checkbox3"
+                id="checkbox3"
+                class="checkboxAll"
+              />
+              <label for="checkbox3">Training</label>
+            </div>
+
+            <div>
+              <input
+                type="checkbox"
+                name="checkbox4"
+                id="checkbox4"
+                class="checkboxAll"
+              />
+              <label for="checkbox4 ">Walk</label>
+            </div>
+          </div>
+
+          <div class="subcategoryFilter">
+            <div class="subcategory">
+              <h3 class="titleCategory">Talla</h3>
+			  <hr>
+			  <div>
+				<input
+				  type="checkbox"
+				  name="checkbox5"
+				  id="checkbox5"
+				  class="checkboxAll"
+				/>
+				<label for="checkbox5 ">L</label>
+			  </div>
+			  <div>
+				<input
+				  type="checkbox"
+				  name="checkbox6"
+				  id="checkbox6"
+				  class="checkboxAll"
+				/>
+				<label for="checkbox6 ">M</label>
+			  </div>
+			  <div>
+				<input
+				  type="checkbox"
+				  name="checkbox7"
+				  id="checkbox7"
+				  class="checkboxAll"
+				/>
+				<label for="checkbox7 ">XL</label>
+			  </div>
+            </div>
+          </div>
+        </section>
+        <div class="container-products">
+        </div>
+      </section>
+    </div>
+
+    <script src="apps.js"></script>
+  </body>
+</html>
