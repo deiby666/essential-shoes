@@ -7,6 +7,34 @@ let urlProductos = 'http://localhost:4000/productos'
 
 document.addEventListener('DOMContentLoaded', ingresarProductos)
 
+document.addEventListener('DOMContentLoaded', function () {
+	const categoriaDropdown = document.querySelector('.categoryFilter');
+	const categoriaOptions = document.querySelector('.categories');
+	const titleCategory = document.querySelector('.titleCategory')
+
+	const tallaDropdown = document.querySelector('.subSizeFilter');
+	const tallaOptions = document.querySelector('.subSize');
+	const titleSize = document.querySelector('.titleSize')
+
+	titleCategory.addEventListener('click', () => {
+
+		const arrowCategory = document.querySelector('.arrowCategory')
+		categoriaOptions.classList.toggle('visible');
+		arrowCategory.style.transform = categoriaOptions.classList.contains('visible') ? 'rotate(180deg)' : 'rotate(0deg)';
+	});
+	titleSize.addEventListener('click', () => {
+
+	const arrowSize = document.querySelector('.arrowSize')
+	tallaOptions.classList.toggle('visible');
+	arrowSize.style.transform = tallaOptions.classList.contains('visible') ? 'rotate(180deg)' : 'rotate(0deg)';
+		
+	});
+
+	});
+  
+
+
+
 async function ingresarProductos(){
 
 	const receive = await fetch(urlProductos)
