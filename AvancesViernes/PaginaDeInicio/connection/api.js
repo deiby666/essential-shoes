@@ -10,7 +10,6 @@ export const getData = async () => {
     }
 
 }
-
 export const sendData = async (usuario) => {
     try {
         await fetch(url, {

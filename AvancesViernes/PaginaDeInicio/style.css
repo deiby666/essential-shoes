@@ -27,7 +27,7 @@ body {
 
     display: flex;
     justify-content: center;
-    background-color: rgb(255, 132, 0);
+    background-color: rgb(52, 140, 255);
     width: 100%;
     color: white;
     font-size: 1.5rem;
@@ -150,8 +150,6 @@ body {
 .unorderList li {
 
     display: flex;
- 
-
 }
 
 .unorderList a {
@@ -184,7 +182,7 @@ header .navToggle {
 
 .navLink:hover {
 
-    color: rgb(255, 149, 0);
+    color: rgb(0, 110, 255);
 }
 
 .imageSection {
@@ -197,7 +195,8 @@ header .navToggle {
 
 .imageSection img {
 
-    border: 2px solid white;
+    border: 2px solid #ccc;
+    
 }
 
 .twoImages {
@@ -209,17 +208,68 @@ header .navToggle {
 .twoImages .divImage1 {
 
     width: 50%;
-    height: 70vh;
+    height: 85vh;
 
 }
 
-.twoImages div img {
+.twoImages .imgSection {
 
     width: 100%;
     height: 100%;
     object-fit: cover;
 
 }
+
+.swiper {
+    width: 100%;
+    height: 40rem;
+    margin: 3rem 0 1rem 0;
+}
+
+.swiper h2 {
+
+    text-align: center;
+    font-size: 3.5rem;
+
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.imagen1Notice {
+
+    object-position: 50% 60%;
+}
+
+.containTypes {
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.containTypes p{
+
+    font-size: 1.5rem;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    background-color: #568bff;
+}
+
 
 .typesContains{
 
@@ -228,11 +278,18 @@ header .navToggle {
     display: flex;
 }
 
-.typeImg{
+.typeImg {
 
     position: relative;
     width: 33.3%;
     overflow: hidden;
+    border: 2px solid #ccc;
+}
+
+.typeImg img {
+
+    margin: 0;
+    border: none;
 }
 
 
@@ -242,7 +299,6 @@ header .navToggle {
     width: 30%;
     top: 80%;
     left: 50%;
-
     font-size: 6rem;
     font-weight: bolder;
     color: white;
@@ -262,10 +318,15 @@ header .navToggle {
     width: 100%;
 }
 
+.buttonImageSection{
+
+    background-color: rgb(0, 132, 255);
+
+}
+
 .firstButton {
 
     position: absolute;
-    text-decoration-line: underline;
     width: 8rem;
     height: 3rem;
     top: 0rem;
@@ -273,14 +334,16 @@ header .navToggle {
     right: 32rem;
     bottom: 0;
     margin: auto;
- 
- 
+}
+
+.firstButton span {
+
+    color: #ffffff;
 }
 
 .secondButton {
 
     position: absolute;
-    text-decoration-line: underline;
     width: 8rem;
     height: 3rem;
     top: 0rem;
@@ -288,7 +351,13 @@ header .navToggle {
     right: 0;
     bottom: 0;
     margin: auto;
+    
 
+}
+
+.secondButton span {
+
+    color: #ffffff;
 }
 
 .imageSection button {
@@ -299,11 +368,9 @@ header .navToggle {
     padding: 4rem 10rem;
     border-radius: 1rem;
     font-size: 2rem;
-    background: none;
     border:none;
     font-size: 2.5rem;
     font-weight: bolder;
-    border-radius: 4px;
 
 }
 
@@ -314,15 +381,19 @@ header .navToggle {
     position: absolute;
     top: 0;
     left: 0;
-    fill: none;
-    
+    fill: none;   
+}
+
+.svgButton:hover {
+
+    cursor: pointer;
 }
 
 .rectButton {
 
     width: 100%;
     height: 100%;
-    stroke: black;
+    stroke: rgb(34, 35, 40);
     stroke-width: 6px;
     stroke-dasharray: 1000;
     stroke-dashoffset: 1000;
@@ -335,24 +406,15 @@ header .navToggle {
 
     stroke-dashoffset: 0;
     
-
 }
 
 .firstButton:hover rect {
 
     stroke-dashoffset: 0;
     
-
 }
 
-.buttonImageSection:hover {
-
-    background-color: rgb(255, 136, 0);
-    text-decoration-line: none !important
-
-}
-
-.containerSlides {
+/*.containerSlides {
 
     background-color: rgb(255, 136, 0);
     padding: 16rem 0rem;
@@ -452,8 +514,6 @@ header .navToggle {
     color: #fff;
     text-transform: uppercase;
     transition: 0.7s ease;
-   
-
   }
 
 .sliderImg:hover{
@@ -471,17 +531,63 @@ header .navToggle {
 
     display: block;
 
-}
-
+} */
 .containerAll {
     position: static;
     padding-top: 5rem;
 }
 
-.containerFavicons{
+@keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .logos {
+    overflow: hidden;
+    padding: 60px 0;
+    background: white;
+    white-space: nowrap;
+    position: relative;
+  }
+  
+  .logos:before,
+  .logos:after {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+  }
+  
+  .logos:before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+  }
+  
+  .logos:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+  }
+ 
+  .logos-slide {
+    display: inline-block;
+    animation: 35s slide infinite linear;
 
-    
-    width: 105vh;
+  }
+  
+  .logos-slide img {
+    height: 40px;
+    margin: 0 40px;
+  }
+
+/* .containerFavicons{
+
+    width: 220vh;
     height: 15vh;
     margin: 10rem auto;
     overflow: hidden;
@@ -492,15 +598,14 @@ header .navToggle {
     display: flex;
     gap: 3rem;
     align-items: center;
-    animation: scroll 10s linear infinite;
-    -webkit-animation: scroll 10s linear infinite;
-    width: calc(200px * 14);
-   
+    animation: scroll 14s linear infinite;
+    -webkit-animation: scroll 14s linear infinite;
+    width: calc(260px * 16);
 }
 
 .slideFavicons .slide {
 
-    width: 120px;
+    width: 100px;
 }
 
 .slideFavicons .slide img {
@@ -517,11 +622,11 @@ header .navToggle {
     }
 
     100%{
-        -webkit-transform: translateX(calc(-200px * 4.5));
-        transform: translateX(calc(-200px * 4.5))
+        -webkit-transform: translateX(calc(-50px * 4.5));
+        transform: translateX(calc(-50px * 4.5))
     }
     
-}
+} */
 
 .containerAllSecondBlock{
 
@@ -585,7 +690,7 @@ header .navToggle {
 .whiteSpace .register {
 
     border: none;
-    background: #ffa653;
+    background: #53b2ff;
 }
 
 .whiteSpace .register:hover {
@@ -602,7 +707,6 @@ header .navToggle {
 .community h3
 {
     font-size: 8rem;
- 
 }
 
 .culture {
@@ -666,7 +770,6 @@ header .navToggle {
 
     text-decoration: none;
     color: black;
-    
 }
 
 .footerDown {
@@ -690,7 +793,6 @@ header .navToggle {
     display: flex;
     align-items: center;
     gap: 1rem;
-
 }
 
 .footerDown .terms a {

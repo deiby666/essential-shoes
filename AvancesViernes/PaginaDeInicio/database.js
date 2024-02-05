@@ -26,9 +26,6 @@ function guardarUsuario(e){
             email,
             password
         }
-    
-
-        
         Swal.fire({
             title: "Te has registrado con exito",
             text: "Bienvenido a la familia essential shoes",
@@ -56,8 +53,6 @@ function guardarUsuario(e){
             icon: "error"
           });
     }
-   
-
 }
 
 function iniciarSesion(e){
@@ -97,8 +92,6 @@ function mostrarPassword(){
     }else{
         password1.type = "password"
     }
-
-
     if(check1.checked){
         password.type = "text"
     }else{

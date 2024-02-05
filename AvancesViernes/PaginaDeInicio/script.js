@@ -2,7 +2,7 @@ import {getData} from "./connection/api.js"
 const usuarios = await getData()
 
 const segundoBloque = document.querySelector('.containerAllSecondBlock')
-const containerAll = document.querySelector('.containerSlides')
+const containerAll = document.querySelector('.swiper')
 const buscar = document.querySelector('.buscar')
 const search = document.querySelector(".buscador")
 
@@ -82,6 +82,18 @@ function comprobarSesion(){
     }
 
 }
+
+let swiper = new Swiper(".mySwiper", {
+    pagination: {
+      el: ".swiper-pagination",
+      type: "progressbar",
+      color: "orange"
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
 
 // document.addEventListener("DOMContentLoaded", ()=>{
 //     comprobarSesion()
